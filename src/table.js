@@ -18,7 +18,7 @@ function Table({tableData, handleAgeClick, handleNameClick, handleEditClick, han
         <td>{data.mobile}</td>
         <td>{data.email}</td>
         <td>{TitleCase(data.city)}</td>
-        <td>
+        <td className='buttons'>
           <button className="delete" onClick={event =>handleDeleteClick(event, data.id)}>Delete</button>
           <button className="edit" onClick={event =>handleEditClick(event, data)}>Edit</button>
         </td>
@@ -29,8 +29,8 @@ function Table({tableData, handleAgeClick, handleNameClick, handleEditClick, han
       <table id='person'>
         <thead>
           <tr>
-            <th>Name<button onClick={handleNameClick}>A-Z</button></th>
-            <th>Age<button onClick={handleAgeClick}>&#8645;</button></th>
+            <th>Name<button className="btn" onClick={handleNameClick}>A-Z</button></th>
+            <th>Age<button className="btn" onClick={handleAgeClick}>&#8645;</button></th>
             <th>Mobile No</th>
             <th>Email</th>
             <th>City</th>
