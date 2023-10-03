@@ -122,11 +122,10 @@ function App() {
   return (
     <div className='container'>
         {showForm && <Form handleChange={handleChange} formInputData = {formInputData} handleSubmit={handleSubmit} handleCancleClick={handleCancleClick} /> }
-      
-        
-      <div className={hidden}></div>
-      <Table tableData={tableData} handleAgeClick = {handleAgeClick} handleNameClick = {handleNameClick} handleEditClick={handleEditClick} handleDeleteClick={handleDeleteClick} />
-      <button id='Add' onClick={handleClick}>Add</button>
+          
+        <div className={hidden}></div>
+        <Table tableData={tableData} handleAgeClick = {handleAgeClick} handleNameClick = {handleNameClick} handleEditClick={handleEditClick} handleDeleteClick={handleDeleteClick} />
+        <button id='Add' onClick={handleClick}>Add</button>
     </div>
     
   );

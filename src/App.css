@@ -1,9 +1,12 @@
 .container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    flex-direction: row;
+    justify-content: center ;
     position: relative;
   }
+
 #Add{
+
     color: #fff;
     background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
     background-origin: border-box;
